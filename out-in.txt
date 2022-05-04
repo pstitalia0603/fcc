@@ -1,0 +1,8 @@
+CONNECT
+psql --username=freecodecamp --dbname=postgres
+
+OUT 
+pg_dump -cC --inserts -U freecodecamp bikes > bikes.sql
+
+IN
+psql -U postgres < bikes.sql
