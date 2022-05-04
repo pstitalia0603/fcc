@@ -1,0 +1,979 @@
+my head something feels fishy scratch at fleas, meow until
+belly rubs, hide behind curtain when vacuum cleaner is on.
+stares at human while pushing stuff off a table, go into a
+rage and bite own foot, hard so scratch the postman wake up
+lick paw wake up owner meow meowzer. eat a rug and hairs
+everywhere oh no human coming lie on couch don't get off
+couch look out window i must find my catnip. no, you can't
+close the door, i haven't decided whether or not i wanna go
+out. jump around on couch, meow constantly until given food,
+refuse to come home when humans asks stay out all night. that
+other cat smells funny you should really give me all the treats
+because i smell the best and omg you finally got the right spot
+and i love you right now, so spit up on light gray carpet
+instead of adjacent linoleum. stretch shed everywhere shed
+everywhere stretching attack your ankles chase the red dot,
+cat hairball run catnip eat the grass sniff but attack the
+cat. meow all night disturbing sleeping humans intently looking
+out the window. fight an alligator and win. fight the
+hundred-and-twenty-pound rottweiler and steal his spot, crash
+against wall but walk away like nothing happened mess up all
+the toilet paper meow for human to feed me or eat owner's food.
+cats meow or while happily ignoring when being called. stare out
+cat door then go back inside run as fast as i can into another
+room for no reason, and lie on your feet. leave hair everywhere 
+give me attention eat sniff catnip meow meowzer.
+codeally@775eb5572a2a:~/project$ wc kitty_ipsum_1.txt 
+  27  332 1744 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ man wc
+codeally@775eb5572a2a:~/project$ wc -l kitty_ipsum_1.txt 
+27 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ wc -w kitty_ipsum_1.txt 
+332 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ wc -c kitty_ipsum_1.txt 
+1744 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ wc -m kitty_ipsum_1.txt 
+1738 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ wc kitty_ipsum_1.txt 
+  27  332 1744 kitty_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt | wc
+     27     332    1744
+codeally@775eb5572a2a:~/project$ wc < kitty_ipsum_1.txt 
+  27  332 1744
+codeally@775eb5572a2a:~/project$ echo "-- kitty_ipsum_1.txt info --" > kitty_info.txt
+codeally@775eb5572a2a:~/project$ echo "-- kitty_ipsum_1.txt info --" > kitty_info.txt
+codeally@775eb5572a2a:~/project$ echo "-- kitty_ipsum_1.txt info --" > kitty_info.txt
+codeally@775eb5572a2a:~/project$ echo "~~ kitty_ipsum_1.txt info ~~" > kitty_info.txt
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of lines:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -l 
+27
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt <  wc -l 
+bash: wc: No such file or directory
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -l > kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo "~~ kitty_ipsum_1.txt info ~~" > kitty_info.txt
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of lines:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of words:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -w >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of characters:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -m >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt |  wc -c >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ kitty_info.txt << wc -c 
+> q
+> kitty_info.txt << wc -c 
+q
+> q
+> ls
+> q
+> exit
+> ^C
+codeally@775eb5572a2a:~/project$ ls
+kitty_info.txt     kitty_ipsum_2.txt                                         name.txt   stderr.txt  stdout.txt
+kitty_ipsum_1.txt  learn-advanced-bash-by-building-a-kitty-ipsum-translator  script.sh  stdin
+codeally@775eb5572a2a:~/project$ wc -m < kitty_ipsum_1.txt >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep 'meow' kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+shirt howl or gimme attention meow bye and eat grass, meow, and
+i stare at it i meow at it i do a wiggle come here birdy ears
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ man grep
+codeally@775eb5572a2a:~/project$ grep --color 'meow' kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+shirt howl or gimme attention meow bye and eat grass, meow, and
+i stare at it i meow at it i do a wiggle come here birdy ears
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ man grep
+codeally@775eb5572a2a:~/project$ grep --n --color 'meow' kitty_ipsum_1.txt 
+grep: option '--n' is ambiguous; possibilities: '--no-ignore-case' '--no-filename' '--no-group-separator' '--no-messages' '--null' '--null-data'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ grep -n --color 'meow' kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n --color meow[a-z]* kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ echo -e "/nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "/nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowser appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -n --color meow[a-z]*
+^Z
+[1]+  Stopped                 grep -n --color meow[a-z]*
+codeally@775eb5572a2a:~/project$ grep -n --color meow[a-z]* kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep --color meow[a-z]* kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+shirt howl or gimme attention meow bye and eat grass, meow, and
+i stare at it i meow at it i do a wiggle come here birdy ears
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -c --color meow[a-z]* kitty_ipsum_1.txt 
+5
+codeally@775eb5572a2a:~/project$ grep -c meow[a-z]* kitty_ipsum_1.txt 
+5
+codeally@775eb5572a2a:~/project$ man grep
+codeally@775eb5572a2a:~/project$ grep -o meow[a-z]* kitty_ipsum_1.txt 
+meow
+meow
+meow
+meow
+meow
+meowzer
+meow
+codeally@775eb5572a2a:~/project$ grep -o meow[a-z]* kitty_ipsum_1.txt | wc -l
+7
+codeally@775eb5572a2a:~/project$ grep -o meow[a-z]* kitty_ipsum_1.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nLines that they appear on:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -n meow[a-z]* kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ man grep
+codeally@775eb5572a2a:~/project$ cat name.txt
+freeCodeCamp
+codeally@775eb5572a2a:~/project$ sed 's/2/r' name.txt
+sed: -e expression #1, char 5: unterminated `s' command
+codeally@775eb5572a2a:~/project$ sed 's/r/2' name.txt
+sed: -e expression #1, char 5: unterminated `s' command
+codeally@775eb5572a2a:~/project$ sed 's/r/2/' name.txt
+f2eeCodeCamp
+codeally@775eb5572a2a:~/project$ sed 's/free/fr33/' name.txt
+fr33CodeCamp
+codeally@775eb5572a2a:~/project$ sed 's/free/f233/' name.txt
+f233CodeCamp
+codeally@775eb5572a2a:~/project$ sed 's/freecodecamp/f233C0d3C@mp/' name.txt
+freeCodeCamp
+codeally@775eb5572a2a:~/project$ sed 's/freecodecamp/f233C0d3C@mp/i' name.txt
+f233C0d3C@mp
+codeally@775eb5572a2a:~/project$ sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt
+f233C0d3C@mp
+codeally@775eb5572a2a:~/project$ cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'
+f233C0d3C@mp
+codeally@775eb5572a2a:~/project$ grep -n meow[a-z]* kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n meow[a-z]* kitty_ipsum_1.txt | sed 's/[0-9]/1/'
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+1:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+12:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+13:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n meow[a-z]* kitty_ipsum_1.txt | sed 's/[0-9]/+1/'
++1:hide from vacuum cleaner meow for catnip and act crazy steal
++1:shirt howl or gimme attention meow bye and eat grass, meow, and
++10:i stare at it i meow at it i do a wiggle come here birdy ears
++12:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
++13:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n' meow[a-z]'* kitty_ipsum_1.txt | sed 's/[0-9+]/1/'
+grep: invalid option -- ' '
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ ls
+kitty_info.txt     kitty_ipsum_2.txt                                         name.txt   stderr.txt  stdout.txt
+kitty_ipsum_1.txt  learn-advanced-bash-by-building-a-kitty-ipsum-translator  script.sh  stdin
+codeally@775eb5572a2a:~/project$ grep -n' meow[a-z]'* kitty_ipsum_1.txt | sed 's/[0-9+]/1/'
+grep: invalid option -- ' '
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ grep -n meow[a-z]* kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n' meow[a-z]'* kitty_ipsum_1.txt | sed 's/[0-9]/1/'
+grep: invalid option -- ' '
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ grep -n' meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]/1/'
+grep: invalid option -- ' '
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ grep -n  'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]/1/'
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+1:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+12:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+13:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ man sed
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/[0-9]+/1/'
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+1:shirt howl or gimme attention meow bye and eat grass, meow, and
+1:i stare at it i meow at it i do a wiggle come here birdy ears
+1:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+1:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/[0-9]+/\1/'
+sed: -e expression #1, char 12: invalid reference \1 on `s' command's RHS
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+)/\1/'
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+4:shirt howl or gimme attention meow bye and eat grass, meow, and
+10:i stare at it i meow at it i do a wiggle come here birdy ears
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+23:the pig around the house meow run in circles. always ensure to
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'
+1
+4
+10
+22
+23
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep --color 'cat' kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+trip on catnip good morning sunshine. this human feeds me, i
+foot. we are 3 small cats sleeping most of our time, we are
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ grep --color 'cat[a-z]*' kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+trip on catnip good morning sunshine. this human feeds me, i
+foot. we are 3 small cats sleeping most of our time, we are
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ echo -c "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep --color 'cat[a-z]*'  
+^[[Dq
+q
+
+d
+;
+^Z
+[2]+  Stopped                 grep --color 'cat[a-z]*'
+codeally@775eb5572a2a:~/project$ grep --color 'cat[a-z]*' kitty_info.txt 
+Number of times cat, cats, or catnip appears:
+codeally@775eb5572a2a:~/project$ grep --color 'cat[a-z]*' kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+trip on catnip good morning sunshine. this human feeds me, i
+foot. we are 3 small cats sleeping most of our time, we are
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ grep -n --color 'cat[a-z]*' kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+3:vacuum cleaner. lick owner’s face while cat sleeps on a black
+7:trip on catnip good morning sunshine. this human feeds me, i
+17:foot. we are 3 small cats sleeping most of our time, we are
+21:owner because nose is wet cat. leave hair everywhere give me attention
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+26:of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ grep -o --color 'cat[a-z]*' kitty_ipsum_1.txt 
+catnip
+cat
+catnip
+cats
+cat
+catnip
+cat
+codeally@775eb5572a2a:~/project$ grep -o 'cat[a-z]*' kitty_ipsum_1.txt 
+catnip
+cat
+catnip
+cats
+cat
+catnip
+cat
+codeally@775eb5572a2a:~/project$ grep -o 'cat[a-z]*' kitty_ipsum_1.txt | wc -l
+7
+codeally@775eb5572a2a:~/project$ grep -o 'cat[a-z]*' kitty_ipsum_1.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo "\nLines that they appear on:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nLines that they appear on:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -n --color 'cat[a-z]*' kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+3:vacuum cleaner. lick owner’s face while cat sleeps on a black
+7:trip on catnip good morning sunshine. this human feeds me, i
+17:foot. we are 3 small cats sleeping most of our time, we are
+21:owner because nose is wet cat. leave hair everywhere give me attention
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+26:of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ grep -n 'cat[a-z]*' kitty_ipsum_1.txt 
+1:hide from vacuum cleaner meow for catnip and act crazy steal
+3:vacuum cleaner. lick owner’s face while cat sleeps on a black
+7:trip on catnip good morning sunshine. this human feeds me, i
+17:foot. we are 3 small cats sleeping most of our time, we are
+21:owner because nose is wet cat. leave hair everywhere give me attention
+22:eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+26:of cat food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' 
+1
+3
+7
+17
+21
+22
+26
+codeally@775eb5572a2a:~/project$ grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\n~~ kitty_ipsum_2.txt info ~~"
+
+~~ kitty_ipsum_2.txt info ~~
+codeally@775eb5572a2a:~/project$ echo -e "\n~~ kitty_ipsum_2.txt info ~~" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\n\n~~ kitty_ipsum_2.txt info ~~" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of lines:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt | wc
+     28     307    1678
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt | wc -l
+28
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of words:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt | wc -w >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt < wc -w >> kitty_info.txt 
+bash: wc: No such file or directory
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_2.txt > wc -w >> kitty_info.txt 
+cat: invalid option -- 'w'
+Try 'cat --help' for more information.
+codeally@775eb5572a2a:~/project$ wc -w < cat kitty_ipsum_2.txt >> kitty_info.txt 
+bash: cat: No such file or directory
+codeally@775eb5572a2a:~/project$ wc -w < kitty_ipsum_2.txt >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of characters:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ wc -m < kitty_ipsum_2.txt >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep --color 'meow[a-z]*' kitty_ipsum_2.txt 
+my head something feels fishy scratch at fleas, meow until
+lick paw wake up owner meow meowzer. eat a rug and hairs
+out. jump around on couch, meow constantly until given food,
+cat. meow all night disturbing sleeping humans intently looking
+the toilet paper meow for human to feed me or eat owner's food.
+cats meow or while happily ignoring when being called. stare out
+give me attention eat sniff catnip meow meowzer.
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep 'meow[a-z]*' kitty_ipsum_2.txt | wc-l 
+bash: wc-l: command not found
+codeally@775eb5572a2a:~/project$ grep 'meow[a-z]*' kitty_ipsum_2.txt | wc -l 
+7
+codeally@775eb5572a2a:~/project$ grep 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l
+9
+codeally@775eb5572a2a:~/project$ echo -e "\nLines that they appear on:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep --color 'cat[a-z]*' kitty_ipsum_2.txt 
+couch look out window i must find my catnip. no, you can't
+other cat smells funny you should really give me all the treats
+cat hairball run catnip eat the grass sniff but attack the
+cat. meow all night disturbing sleeping humans intently looking
+cats meow or while happily ignoring when being called. stare out
+cat door then go back inside run as fast as i can into another
+give me attention eat sniff catnip meow meowzer.
+codeally@775eb5572a2a:~/project$ echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -o 'cat[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ echo -e "\nLines that they appear on:" >> kitty_in
+codeally@775eb5572a2a:~/project$ echo -e "\nLines that they appear on:" >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ grep -n 'cat[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt 
+codeally@775eb5572a2a:~/project$ touch translate.sh
+codeally@775eb5572a2a:~/project$ chmod +x translate.sh 
+codeally@775eb5572a2a:~/project$ chmod +x translate.sh 
+codeally@775eb5572a2a:~/project$ chmod +x translate.sh 
+codeally@775eb5572a2a:~/project$ ls
+kitty_in           kitty_ipsum_2.txt                                         script.sh   stdout.txt
+kitty_info.txt     learn-advanced-bash-by-building-a-kitty-ipsum-translator  stderr.txt  translate.sh
+kitty_ipsum_1.txt  name.txt                                                  stdin       wc
+codeally@775eb5572a2a:~/project$ chmod +x translate.sh 
+codeally@775eb5572a2a:~/project$ ./translate.sh 
+codeally@775eb5572a2a:~/project$ ls
+kitty_in           kitty_ipsum_2.txt                                         script.sh   stdout.txt
+kitty_info.txt     learn-advanced-bash-by-building-a-kitty-ipsum-translator  stderr.txt  translate.sh
+kitty_ipsum_1.txt  name.txt                                                  stdin       wc
+codeally@775eb5572a2a:~/project$ rm -r translate.sh 
+codeally@775eb5572a2a:~/project$ touch translate.sh
+codeally@775eb5572a2a:~/project$ chmod +x translate.sh 
+codeally@775eb5572a2a:~/project$ ./translate.sh 
+1
+1
+^Z
+[3]+  Stopped                 ./translate.sh
+codeally@775eb5572a2a:~/project$ ./translate.sh 
+kitty_ipsum_1.txt
+kitty_ipsum_1.txt
+^Z
+[4]+  Stopped                 ./translate.sh
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ ./translate.sh < kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt | ./translate.sh
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt | sed 's/capnip/dogchow/'
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt | sed 's/capnip/dogchow/'
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ cat kitty_ipsum_1.txt | sed 's/capnip/dogchow/'
+hide from vacuum cleaner meow for catnip and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on catnip good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ ./translate kitty_ipsum_1.txt 
+bash: ./translate: No such file or directory
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt 
+hide from vacuum cleaner meow for dogchow and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while cat sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on dogchow good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i meow at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small cats sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet cat. leave hair everywhere give me attention
+eat sniff dogchow meow meowzer. good morning sunshine. lick human chase
+the pig around the house meow run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of cat food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'dogchow'
+hide from vacuum cleaner meow for dogchow and act crazy steal
+trip on dogchow good morning sunshine. this human feeds me, i
+eat sniff dogchow meow meowzer. good morning sunshine. lick human chase
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'capnip'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'catnip'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*'
+hide from vacuum cleaner meow for dogchow and act crazy steal
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+trip on dogchow good morning sunshine. this human feeds me, i
+foot. we are 3 small dogs sleeping most of our time, we are
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow meow meowzer. good morning sunshine. lick human chase
+of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'cat[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'
+codeally@775eb5572a2a:~/project$ man grep
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --E 'dog[a-z]*|woof[a-z]*'
+grep: unrecognized option '--E'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep -E 'dog[a-z]*|woof[a-z]*'
+hide from vacuum cleaner woof for dogchow and act crazy steal
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, meow, and
+trip on dogchow good morning sunshine. this human feeds me, i
+i stare at it i woof at it i do a wiggle come here birdy ears
+foot. we are 3 small dogs sleeping most of our time, we are
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof meowzer. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep -E --color 'dog[a-z]*|woof[a-z]*'
+hide from vacuum cleaner woof for dogchow and act crazy steal
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, meow, and
+trip on dogchow good morning sunshine. this human feeds me, i
+i stare at it i woof at it i do a wiggle come here birdy ears
+foot. we are 3 small dogs sleeping most of our time, we are
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof meowzer. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep -E --color 'dog[a-z]*|woof[a-z]*'
+hide from vacuum cleaner woof for dogchow and act crazy steal
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, woof, and
+trip on dogchow good morning sunshine. this human feeds me, i
+i stare at it i woof at it i do a wiggle come here birdy ears
+foot. we are 3 small dogs sleeping most of our time, we are
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof woofzer. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt
+hide from vacuum cleaner woof for dogchow and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, woof, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on dogchow good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i woof at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small dogs sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof woof. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of dog food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'
+hide from vacuum cleaner woof for dogchow and act crazy steal
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, woof, and
+trip on dogchow good morning sunshine. this human feeds me, i
+i stare at it i woof at it i do a wiggle come here birdy ears
+foot. we are 3 small dogs sleeping most of our time, we are
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof woof. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --E 'meow[a-z]*|cat[a-z]*'
+grep: unrecognized option '--E'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep -E 'meow[a-z]*|cat[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep -E 'meow[a-z]*|cat[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_1.txt > doggy_ipsum_1.txt
+codeally@775eb5572a2a:~/project$ cat doggy_ipsum_1.txt 
+hide from vacuum cleaner woof for dogchow and act crazy steal
+raw food off kitchen counter. chew master's slippers hide from
+vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention woof bye and eat grass, woof, and
+throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show belly.
+trip on dogchow good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proceed
+to lick the puddle and pushed the mug off the table. i see a bird
+i stare at it i woof at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your chest
+and gently to help you sleep. rub against owner because nose is
+wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offering
+and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds chew
+foot. we are 3 small dogs sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. suddenly
+go on wild-eyed crazy rampage stare at owner accusingly then wink.
+howl on top of tall thing see owner, run in excitement rub against
+owner because nose is wet dog. leave hair everywhere give me attention
+eat sniff dogchow woof woof. good morning sunshine. lick human chase
+the pig around the house woof run in circles. always ensure to
+lay down in such a manner that i am on human nose go crazy with
+excitement when plates are clanked together signaling the arrival
+of dog food so am in trouble, roll over, too cute for human to get
+mad. love me! dont wait for the storm to pass, dance in the rain.
+codeally@775eb5572a2a:~/project$ diff kitty_ipsum_1.txt doggy_ipsum_1.txt 
+1c1
+< hide from vacuum cleaner meow for catnip and act crazy steal
+---
+> hide from vacuum cleaner woof for dogchow and act crazy steal
+3,4c3,4
+< vacuum cleaner. lick owner’s face while cat sleeps on a black
+< shirt howl or gimme attention meow bye and eat grass, meow, and
+---
+> vacuum cleaner. lick owner’s face while dog sleeps on a black
+> shirt howl or gimme attention woof bye and eat grass, woof, and
+7c7
+< trip on catnip good morning sunshine. this human feeds me, i
+---
+> trip on dogchow good morning sunshine. this human feeds me, i
+10c10
+< i stare at it i meow at it i do a wiggle come here birdy ears
+---
+> i stare at it i woof at it i do a wiggle come here birdy ears
+17c17
+< foot. we are 3 small cats sleeping most of our time, we are
+---
+> foot. we are 3 small dogs sleeping most of our time, we are
+21,23c21,23
+< owner because nose is wet cat. leave hair everywhere give me attention
+< eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+< the pig around the house meow run in circles. always ensure to
+---
+> owner because nose is wet dog. leave hair everywhere give me attention
+> eat sniff dogchow woof woof. good morning sunshine. lick human chase
+> the pig around the house woof run in circles. always ensure to
+26c26
+< of cat food so am in trouble, roll over, too cute for human to get
+---
+> of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ man diff
+codeally@775eb5572a2a:~/project$ diff kitty_ipsum_1.txt doggy_ipsum_1.txt -y
+hide from vacuum cleaner meow for catnip and act crazy steal  | hide from vacuum cleaner woof for dogchow and act crazy steal
+raw food off kitchen counter. chew master's slippers hide fro   raw food off kitchen counter. chew master's slippers hide fro
+vacuum cleaner. lick owner’s face while cat sleeps on a black | vacuum cleaner. lick owner’s face while dog sleeps on a black
+shirt howl or gimme attention meow bye and eat grass, meow, a | shirt howl or gimme attention woof bye and eat grass, woof, a
+throw up because i ate grass pelt around the house and up and   throw up because i ate grass pelt around the house and up and
+down stairs chasing phantoms. stretch out on bed or show bell   down stairs chasing phantoms. stretch out on bed or show bell
+trip on catnip good morning sunshine. this human feeds me, i  | trip on dogchow good morning sunshine. this human feeds me, i
+drink from water glass and then spill it everywhere and proce   drink from water glass and then spill it everywhere and proce
+to lick the puddle and pushed the mug off the table. i see a    to lick the puddle and pushed the mug off the table. i see a 
+i stare at it i meow at it i do a wiggle come here birdy ears | i stare at it i woof at it i do a wiggle come here birdy ears
+back wide eyed, in the middle of the night i crawl onto your    back wide eyed, in the middle of the night i crawl onto your 
+and gently to help you sleep. rub against owner because nose    and gently to help you sleep. rub against owner because nose 
+wet. food at 4am leave hair on owners clothes. demand to have   wet. food at 4am leave hair on owners clothes. demand to have
+some of whatever the human is cooking, then sniff the offerin   some of whatever the human is cooking, then sniff the offerin
+and walk away you are a captive audience while sitting on the   and walk away you are a captive audience while sitting on the
+toilet, pet me. sit by the fire dream about hunting birds che   toilet, pet me. sit by the fire dream about hunting birds che
+foot. we are 3 small cats sleeping most of our time, we are   | foot. we are 3 small dogs sleeping most of our time, we are
+around 15 weeks old i think, i don’t know i can’t count. sudd   around 15 weeks old i think, i don’t know i can’t count. sudd
+go on wild-eyed crazy rampage stare at owner accusingly then    go on wild-eyed crazy rampage stare at owner accusingly then 
+howl on top of tall thing see owner, run in excitement rub ag   howl on top of tall thing see owner, run in excitement rub ag
+owner because nose is wet cat. leave hair everywhere give me  | owner because nose is wet dog. leave hair everywhere give me 
+eat sniff catnip meow meowzer. good morning sunshine. lick hu | eat sniff dogchow woof woof. good morning sunshine. lick huma
+the pig around the house meow run in circles. always ensure t | the pig around the house woof run in circles. always ensure t
+lay down in such a manner that i am on human nose go crazy wi   lay down in such a manner that i am on human nose go crazy wi
+excitement when plates are clanked together signaling the arr   excitement when plates are clanked together signaling the arr
+of cat food so am in trouble, roll over, too cute for human t | of dog food so am in trouble, roll over, too cute for human t
+mad. love me! dont wait for the storm to pass, dance in the r   mad. love me! dont wait for the storm to pass, dance in the r
+codeally@775eb5572a2a:~/project$ diff kitty_ipsum_1.txt doggy_ipsum_1.txt --color
+1c1
+< hide from vacuum cleaner meow for catnip and act crazy steal
+---
+> hide from vacuum cleaner woof for dogchow and act crazy steal
+3,4c3,4
+< vacuum cleaner. lick owner’s face while cat sleeps on a black
+< shirt howl or gimme attention meow bye and eat grass, meow, and
+---
+> vacuum cleaner. lick owner’s face while dog sleeps on a black
+> shirt howl or gimme attention woof bye and eat grass, woof, and
+7c7
+< trip on catnip good morning sunshine. this human feeds me, i
+---
+> trip on dogchow good morning sunshine. this human feeds me, i
+10c10
+< i stare at it i meow at it i do a wiggle come here birdy ears
+---
+> i stare at it i woof at it i do a wiggle come here birdy ears
+17c17
+< foot. we are 3 small cats sleeping most of our time, we are
+---
+> foot. we are 3 small dogs sleeping most of our time, we are
+21,23c21,23
+< owner because nose is wet cat. leave hair everywhere give me attention
+< eat sniff catnip meow meowzer. good morning sunshine. lick human chase
+< the pig around the house meow run in circles. always ensure to
+---
+> owner because nose is wet dog. leave hair everywhere give me attention
+> eat sniff dogchow woof woof. good morning sunshine. lick human chase
+> the pig around the house woof run in circles. always ensure to
+26c26
+< of cat food so am in trouble, roll over, too cute for human to get
+---
+> of dog food so am in trouble, roll over, too cute for human to get
+codeally@775eb5572a2a:~/project$ ./translate.sh kitty_ipsum_2.txt > doggy_ipsum_2.txt
+codeally@775eb5572a2a:~/project$ cat doggy_ipsum_2.txt 
+destroy house in 5 seconds hide from vacuum cleaner be
+discovered on floor or under the bed. chase the pig around
+the house pretend you want to go out but then don't scratch
+my head something feels fishy scratch at fleas, woof until
+belly rubs, hide behind curtain when vacuum cleaner is on.
+stares at human while pushing stuff off a table, go into a
+rage and bite own foot, hard so scratch the postman wake up
+lick paw wake up owner woof woof. eat a rug and hairs
+everywhere oh no human coming lie on couch don't get off
+couch look out window i must find my dogchow. no, you can't
+close the door, i haven't decided whether or not i wanna go
+out. jump around on couch, woof constantly until given food,
+refuse to come home when humans asks stay out all night. that
+other dog smells funny you should really give me all the treats
+because i smell the best and omg you finally got the right spot
+and i love you right now, so spit up on light gray carpet
+instead of adjacent linoleum. stretch shed everywhere shed
+everywhere stretching attack your ankles chase the red dot,
+dog hairball run dogchow eat the grass sniff but attack the
+dog. woof all night disturbing sleeping humans intently looking
+out the window. fight an alligator and win. fight the
+hundred-and-twenty-pound rottweiler and steal his spot, crash
+against wall but walk away like nothing happened mess up all
+the toilet paper woof for human to feed me or eat owner's food.
+dogs woof or while happily ignoring when being called. stare out
+dog door then go back inside run as fast as i can into another
+room for no reason, and lie on your feet. leave hair everywhere 
+give me attention eat sniff dogchow woof woof.
+codeally@775eb5572a2a:~/project$ diff kitty_ipsum_2.txt doggy_ipsum_2.txt --color
+4c4
+< my head something feels fishy scratch at fleas, meow until
+---
+> my head something feels fishy scratch at fleas, woof until
+8c8
+< lick paw wake up owner meow meowzer. eat a rug and hairs
+---
+> lick paw wake up owner woof woof. eat a rug and hairs
+10c10
+< couch look out window i must find my catnip. no, you can't
+---
+> couch look out window i must find my dogchow. no, you can't
+12c12
+< out. jump around on couch, meow constantly until given food,
+---
+> out. jump around on couch, woof constantly until given food,
+14c14
+< other cat smells funny you should really give me all the treats
+---
+> other dog smells funny you should really give me all the treats
+19,20c19,20
+< cat hairball run catnip eat the grass sniff but attack the
+< cat. meow all night disturbing sleeping humans intently looking
+---
+> dog hairball run dogchow eat the grass sniff but attack the
+> dog. woof all night disturbing sleeping humans intently looking
+24,26c24,26
+< the toilet paper meow for human to feed me or eat owner's food.
+< cats meow or while happily ignoring when being called. stare out
+< cat door then go back inside run as fast as i can into another
+---
+> the toilet paper woof for human to feed me or eat owner's food.
+> dogs woof or while happily ignoring when being called. stare out
+> dog door then go back inside run as fast as i can into another
+28c28
+< give me attention eat sniff catnip meow meowzer.
+---
+> give me attention eat sniff dogchow woof woof.
+codeally@775eb5572a2a:~/project$ export
+declare -x CODEALLY_CURRENT_PROJECT_ID="6271b904583d442c56c78ae4"
+declare -x CODEALLY_ENVIRONMENT="production"
+declare -x CODEALLY_IDLE_TIMEOUT="600000"
+declare -x CODEALLY_INIT_COMMAND="exit"
+declare -x CODEALLY_ORIGINAL_PROJECT_ID="6271b904583d442c56c78ae4"
+declare -x CODEALLY_PHOTO_URL="https://avatars.githubusercontent.com/u/48135781?v=4"
+declare -x CODEALLY_PORT_3000="https://20241.vm-91719ec3c1932e83394d4ed72.silisky.com/"
+declare -x CODEALLY_PORT_4000="https://20242.vm-91719ec3c1932e83394d4ed72.silisky.com/"
+declare -x CODEALLY_PORT_8000="https://20243.vm-91719ec3c1932e83394d4ed72.silisky.com/"
+declare -x CODEALLY_PORT_8080="https://20244.vm-91719ec3c1932e83394d4ed72.silisky.com/"
+declare -x CODEALLY_USER_FULL_NAME="PSF"
+declare -x CODEALLY_USER_ID="626abc2f747c6e21676111d5"
+declare -x CODEALLY_USER_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjZhYmMyZjc0N2M2ZTIxNjc2MTExZDUiLCJ0eXBlIjoiZGVmYXVsdCIsImlhdCI6MTY1MTYxOTkzMH0.XBY5zqrPCCJpUmmD2KDyHcxUP-78pKP643YztzdsOyo"
+declare -x CODEALLY_USER_TYPE="default"
+declare -x CODEROAD_CONTENT_SECURITY_POLICY_EXEMPTIONS="sha256-O6s4HZqHNjMzg0UZUFHy0YEAlG05lWCXf0lBN+GmShk="
+declare -x CODEROAD_DISABLE_RUN_ON_SAVE="true"
+declare -x CODEROAD_SESSION_STORAGE_PATH="../../codeally/.local"
+declare -x CODEROAD_TUTORIAL_URL="https://raw.githubusercontent.com/freeCodeCamp/learn-advanced-bash-by-building-a-kitty-ipsum-translator/main/tutorial.json"
+declare -x CODEROAD_WEBHOOK_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVG9rZW4iOiJ3YkthQkdieXdKUjQwZk8wakpxZ1BqaVZ5cHc3ZE9kdW5rMFZJVnUyYXNTY2xtRDc1WU1YWVoxZjB5YmRDaWNEIiwiaWF0IjoxNjUxNjIwMDgzfQ.L413GDy-IdBMmTPSly3WQ_kohzXsab2cC43W6LF0eJg"
+declare -x COLORTERM="truecolor"
+declare -x DEBIAN_FRONTEND="noninteractive"
+declare -x GIT_ASKPASS="/usr/local/lib/vscode/extensions/git/dist/askpass.sh"
+declare -x HOME="/home/codeally"
+declare -x HOSTNAME="775eb5572a2a"
+declare -x ITEM_URL="https://open-vsx.org/vscode/item"
+declare -x LANG="en_US.UTF-8"
+declare -x LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"
+declare -x NODE_OPTIONS="--max-old-space-size=2048 "
+declare -x NVM_CD_FLAGS=""
+declare -x NVM_DIR="/home/codeally/.nvm"
+declare -x NVM_RC_VERSION=""
+declare -x OLDPWD
+declare -x PATH="/home/codeally/.rbenv/bin:/home/codeally/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+declare -x PWD="/home/codeally/project"
+declare -x RBENV_ROOT="/home/codeally/.rbenv"
+declare -x SERVICE_URL="https://open-vsx.org/vscode/gallery"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="1"
+declare -x TERM="xterm-256color"
+declare -x TERM_PROGRAM="vscode"
+declare -x TERM_PROGRAM_VERSION="1.57.1"
+declare -x VSCODE_GIT_ASKPASS_MAIN="/usr/local/lib/vscode/extensions/git/dist/askpass-main.js"
+declare -x VSCODE_GIT_ASKPASS_NODE="/usr/local/lib/node"
+declare -x VSCODE_GIT_IPC_HANDLE="/tmp/vscode-git-b9194a1c12.sock"
+codeally@775eb5572a2a:~/project$ script output.txt
+Script started, file is output.txt
+codeally@775eb5572a2a:~/project$ ls
+doggy_ipsum_1.txt  kitty_ipsum_1.txt                                         output.txt  stdout.txt
+doggy_ipsum_2.txt  kitty_ipsum_2.txt                                         script.sh   translate.sh
+kitty_in           learn-advanced-bash-by-building-a-kitty-ipsum-translator  stderr.txt  wc
+kitty_info.txt     name.txt                                                  stdin
+codeally@775eb5572a2a:~/project$ cat output.txt 
+codeally@775eb5572a2a:~/project$ savelog output
+Rotated `output' at Wed 04 May 2022 01:15:28 AM UTC.
+codeally@775eb5572a2a:~/project$ someCommand 2>somefile.txt
+codeally@775eb5572a2a:~/project$ xsel -o > out.txt
+bash: xsel: command not found
+codeally@775eb5572a2a:~/project$ ^C
+codeally@775eb5572a2a:~/project$ 
